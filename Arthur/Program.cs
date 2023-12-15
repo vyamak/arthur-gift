@@ -1,7 +1,5 @@
-﻿
-
-using var titi = new DadContext();
-titi.Database.CreateSchema();
+﻿using var titi = new DadContext();
+await titi.Database.EnsureCreatedAsync();
 titi.Children.Add(new Child
 {
     Name = "Arthur",
