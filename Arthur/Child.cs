@@ -1,6 +1,8 @@
 ﻿internal class Child
 {
-    public string Name { get; set; }
-    public DateTime BirthDate { get; internal set; }
-    public DateTime BornAt { get; internal set; }
+    public string Name { get; set; } = string.Empty;
+    public DateTime BirthDate { get; set; }
+    public DateTime BornAt { get; set; }
+    public double WeightInKg { get; set; }
+    public double HeightInCm { get; set; }
 }
